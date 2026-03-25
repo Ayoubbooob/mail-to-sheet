@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Privacy Policy — Email Exporter for Google Sheets™</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Email Exporter for Google Sheets™. Learn how we handle your data, what permissions we request, and how we protect your privacy."
+    />
+    <meta
+      property="og:title"
+      content="Privacy Policy — Email Exporter for Google Sheets™"
+    />
+    <meta
+      property="og:description"
+      content="Privacy policy for the Email Exporter for Google Sheets™ add-on."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/favicon.svg" alt="" width="28" height="28" />
+          Email Exporter
+        </a>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html" class="active">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="about.html">About</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>
+          Your privacy matters. This policy explains how Email Exporter for
+          Google Sheets™ handles your data.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="content-section">
+      <div class="container">
+        <p class="last-updated">Last updated: March 24, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy describes how the "Email Exporter for Google
+          Sheets™" add-on (the "Service") collects, uses, and protects
+          information when you use the Service. By installing and using the
+          add-on, you agree to the practices described in this policy.
+        </p>
+
+        <h2>2. What Data We Access</h2>
+        <p>
+          The add-on accesses the following types of data to provide its core
+          functionality:
+        </p>
+        <ul>
+          <li>
+            <strong>Email metadata from Gmail™:</strong> sender address,
+            recipient address, subject line, date/time, labels, and message
+            snippet. The add-on does <strong>not</strong> access the full body
+            content of your emails unless required for the specific export you
+            initiate.
+          </li>
+          <li>
+            <strong>Google Sheets™ data:</strong> the add-on reads and writes to
+            the active spreadsheet in order to append exported email data.
+          </li>
+        </ul>
+
+        <h2>3. Why We Access Your Data</h2>
+        <p>
+          We access the minimum data necessary to deliver the core functionality
+          of the Service:
+        </p>
+        <ul>
+          <li>
+            To read email metadata from your Gmail™ account based on your
+            selected filters (label, sender, date range).
+          </li>
+          <li>
+            To write the exported email data into your Google Sheets™
+            spreadsheet.
+          </li>
+        </ul>
+
+        <h2>4. How Data Is Processed</h2>
+        <p>
+          All data processing occurs within the Google Workspace™ environment
+          using Google Apps Script. When you initiate an export:
+        </p>
+        <ul>
+          <li>
+            The add-on queries the Gmail™ API for email metadata matching your
+            filters.
+          </li>
+          <li>
+            The retrieved data is formatted and written directly into the
+            currently active Google Sheets™ spreadsheet.
+          </li>
+          <li>Processing happens in real-time during the export operation.</li>
+        </ul>
+
+        <h2>5. Data Storage</h2>
+        <p>
+          <strong
+            >We do not store your email data or spreadsheet data on any external
+            servers.</strong
+          >
+          All data remains within your Google Workspace™ account. The add-on
+          does not transmit your data to any third-party services, databases, or
+          external infrastructure.
+        </p>
+        <p>
+          The only data stored locally (within your Google account) includes
+          your user preferences and filter settings to improve your experience.
+        </p>
+
+        <h2>6. Data Sharing &amp; Selling</h2>
+        <p>
+          <strong
+            >We do not sell, rent, lease, or share your personal data or email
+            data with any third parties.</strong
+          >
+          Your data is yours. We have no advertising partners, data brokers, or
+          analytics services that receive your data.
+        </p>
+
+        <h2>7. Security Practices</h2>
+        <p>We take the security of your data seriously:</p>
+        <ul>
+          <li>
+            The add-on runs entirely within Google's secure infrastructure
+            (Google Apps Script).
+          </li>
+          <li>
+            Authentication is handled by Google's OAuth 2.0 protocol — we never
+            see or store your password.
+          </li>
+          <li>
+            We request only the minimum OAuth scopes required for the add-on to
+            function.
+          </li>
+          <li>
+            All communication between the add-on and Google services uses HTTPS
+            encryption.
+          </li>
+          <li>No data is sent to external servers or third-party APIs.</li>
+        </ul>
+
+        <h2>8. OAuth Permissions Explained</h2>
+        <p>The add-on requests the following permissions via Google OAuth:</p>
+        <ul>
+          <li>
+            <strong>Gmail™ read access:</strong> allows the add-on to read email
+            metadata (sender, subject, date, labels) to perform exports. This
+            does not grant permission to send, delete, or modify your emails.
+          </li>
+          <li>
+            <strong>Google Sheets™ access:</strong> allows the add-on to read
+            from and write to the current spreadsheet to deliver exported data.
+          </li>
+          <li>
+            <strong>Script runtime permissions:</strong> allows the add-on to
+            execute within the Google Apps Script environment.
+          </li>
+        </ul>
+        <p>
+          You can revoke these permissions at any time from your
+          <a
+            href="https://myaccount.google.com/permissions"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Account Permissions</a
+          >
+          page.
+        </p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>
+          The Service is not intended for use by children under the age of 13.
+          We do not knowingly collect data from children.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Changes will be
+          posted on this page with an updated "Last updated" date. Continued use
+          of the Service after changes constitutes acceptance of the updated
+          policy.
+        </p>
+
+        <h2>11. Contact Us</h2>
+        <p>
+          If you have questions or concerns about this Privacy Policy or how
+          your data is handled, please contact us at:
+        </p>
+        <p><strong>Email:</strong> aeob2090@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Email Exporter for Google Sheets™</h4>
+            <p>
+              A productivity add-on compatible with Gmail™ and Google Sheets™
+              that automatically exports email data into spreadsheets.
+            </p>
+          </div>
+          <div>
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="about.html">About / Developer</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>aeob2090@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Email Exporter for Google Sheets™. All rights reserved.
+          </p>
+          <p>
+            <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+          </p>
+        </div>
+        <p class="trademark">
+          Google Sheets™ and Gmail™ are trademarks of Google LLC. This product
+          is not affiliated with or endorsed by Google LLC.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

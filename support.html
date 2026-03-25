@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Support — Email Exporter for Google Sheets™</title>
+    <meta
+      name="description"
+      content="Get help with Email Exporter for Google Sheets™. Find answers to common questions, installation guides, and contact support."
+    />
+    <meta
+      property="og:title"
+      content="Support — Email Exporter for Google Sheets™"
+    />
+    <meta
+      property="og:description"
+      content="Support and FAQ for the Email Exporter for Google Sheets™ add-on."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/favicon.svg" alt="" width="28" height="28" />
+          Email Exporter
+        </a>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="support.html" class="active">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="about.html">About</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Support</h1>
+        <p>Need help? Find answers below or reach out to us directly.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section>
+      <div class="container text-center">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">
+          Can't find what you're looking for in the FAQ? Send us an email and
+          we'll get back to you as soon as possible.
+        </p>
+        <a href="mailto:aeob2090@gmail.com" class="btn btn-primary">
+          <svg
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          aeob2090@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+      <div class="container text-center">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Quick answers to common questions about Email Exporter for Google
+          Sheets™.
+        </p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I install the add-on?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <ol>
+                  <li>Open a Google Sheets™ spreadsheet.</li>
+                  <li>
+                    Go to
+                    <strong>Extensions &gt; Add-ons &gt; Get add-ons</strong>.
+                  </li>
+                  <li>
+                    Search for
+                    <strong>"Email Exporter for Google Sheets™"</strong>.
+                  </li>
+                  <li>
+                    Click <strong>Install</strong> and follow the prompts to
+                    authorize the add-on.
+                  </li>
+                </ol>
+                <p>
+                  Alternatively, you can install it directly from the
+                  <a href="#">Google Workspace Marketplace</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I authorize access to my Gmail™ account?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  When you first run the add-on, Google will prompt you to
+                  authorize the required permissions. You'll see a consent
+                  screen explaining what data the add-on can access:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Gmail™ read access</strong> — to read email metadata
+                    for exports.
+                  </li>
+                  <li>
+                    <strong>Google Sheets™ access</strong> — to write exported
+                    data to your spreadsheet.
+                  </li>
+                </ul>
+                <p>
+                  Click <strong>"Allow"</strong> to grant permissions. The
+                  add-on uses Google's secure OAuth 2.0 protocol — your password
+                  is never shared with us.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I export emails to Google Sheets™?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <ol>
+                  <li>Open a Google Sheets™ spreadsheet.</li>
+                  <li>
+                    Go to
+                    <strong
+                      >Extensions &gt; Email Exporter for Google Sheets™ &gt;
+                      Open</strong
+                    >.
+                  </li>
+                  <li>
+                    In the sidebar, configure your
+                    <strong>filters</strong> (label, sender, date range).
+                  </li>
+                  <li>Click <strong>"Export"</strong>.</li>
+                  <li>
+                    The email metadata will be appended to your active sheet.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              I'm getting an authorization error. What should I do?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  If you encounter authorization errors, try the following
+                  steps:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Revoke and re-authorize:</strong> Go to
+                    <a
+                      href="https://myaccount.google.com/permissions"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Google Account Permissions</a
+                    >, find "Email Exporter for Google Sheets™", click
+                    <strong>Remove Access</strong>, then re-open the add-on to
+                    authorize again.
+                  </li>
+                  <li>
+                    <strong>Check your browser:</strong> Ensure pop-ups are not
+                    blocked, as the authorization window may open in a popup.
+                  </li>
+                  <li>
+                    <strong>Clear cache:</strong> Try clearing your browser's
+                    cache and cookies, then attempt authorization again.
+                  </li>
+                  <li>
+                    <strong>Use a supported browser:</strong> The add-on works
+                    best in Google Chrome.
+                  </li>
+                </ol>
+                <p>
+                  If the issue persists, contact us at
+                  <a href="mailto:aeob2090@gmail.com">aeob2090@gmail.com</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I uninstall the add-on?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <ol>
+                  <li>Open a Google Sheets™ spreadsheet.</li>
+                  <li>
+                    Go to
+                    <strong>Extensions &gt; Add-ons &gt; Manage add-ons</strong
+                    >.
+                  </li>
+                  <li>
+                    Find "Email Exporter for Google Sheets™" and click the
+                    three-dot menu.
+                  </li>
+                  <li>Select <strong>"Uninstall"</strong>.</li>
+                </ol>
+                <p>
+                  To also revoke permissions, visit your
+                  <a
+                    href="https://myaccount.google.com/permissions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Google Account Permissions</a
+                  >
+                  and remove the add-on.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is my email data stored anywhere?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  <strong>No.</strong> Email data is processed in real-time and
+                  written directly to your Google Sheets™ spreadsheet. We do not
+                  store, cache, or transmit your email data to any external
+                  servers. All data remains within your Google Workspace™
+                  account. See our <a href="privacy.html">Privacy Policy</a> for
+                  full details.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Email Exporter for Google Sheets™</h4>
+            <p>
+              A productivity add-on compatible with Gmail™ and Google Sheets™
+              that automatically exports email data into spreadsheets.
+            </p>
+          </div>
+          <div>
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="about.html">About / Developer</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>aeob2090@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Email Exporter for Google Sheets™. All rights reserved.
+          </p>
+          <p>
+            <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+          </p>
+        </div>
+        <p class="trademark">
+          Google Sheets™ and Gmail™ are trademarks of Google LLC. This product
+          is not affiliated with or endorsed by Google LLC.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
